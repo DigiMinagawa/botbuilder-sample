@@ -25,6 +25,7 @@ bot.dialog('/', function (session) {
     console.log("---------------");
     console.log("---------------");
     console.log("---------------");
+    console.log(session.message);
     console.log(session);
     console.log("---------------");
     console.log("---------------");
