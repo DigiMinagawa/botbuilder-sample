@@ -25,7 +25,7 @@ bot.dialog('/', function (session) {
     console.log("---------------");
     console.log("---------------");
     console.log("---------------");
-    console.log(session);
+    console.log(session.message.address.user.id);
     console.log(session.domain);
     console.log(session.message);
     console.log("---------------");
