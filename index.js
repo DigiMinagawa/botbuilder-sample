@@ -23,7 +23,7 @@ server.post('/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector);
 bot.dialog('/', function (session) {
     console.log("---------------");
-    console.log(session);
+    console.log(session.library._events);
     console.log("---------------");
     session.send("Hello World!");
 });
