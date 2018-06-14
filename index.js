@@ -24,13 +24,13 @@ var bot = new builder.UniversalBot(connector);
 bot.dialog('/', 
     function (session) {
         console.log("---------------");
-        console.dir(session);
+        console.log(JSON.stringify(session));
         console.log("---------------");
         session.send("Hello World!");
     },
     function (session, results) {
         console.log("---------------");
-        console.dir(results);
+        console.log(JSON.stringify(results));
         console.log("---------------");
         session.send("Hello World!!!");
     }
