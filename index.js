@@ -2,6 +2,7 @@ require('dotenv').config();
 
 var builder = require('botbuilder');
 var restify = require('restify');
+var util = require('util');
 
 // auth for connector
 
