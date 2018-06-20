@@ -27,6 +27,8 @@ bot.dialog('/',
         console.log("---------------");
         console.log(util.inspect(session));
         console.log("---------------");
+        console.log(session.conversation);
+        console.log("---------------");
         session.send("Hello World!");
     },
     function (session, results) {
